@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - MCSCategory (0.1.0)
+  - MCSCategory (0.0.2)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  MCSCategory: bc50484c5cf10bd01cbb4263fda6d9e670d11920
+  MCSCategory: f6863432892dff6fe9e1a9f6bf0d86a5264b4bca
 
 PODFILE CHECKSUM: 22a88253c4c14f3481e8dee6aea3b76fad689cec
 
