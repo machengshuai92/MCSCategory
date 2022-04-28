@@ -7,6 +7,8 @@
 //
 
 #import "MCSViewController.h"
+#import "FoundationCategory.h"
+#import "UIKitCategory.h"
 
 @interface MCSViewController ()
 
@@ -17,6 +19,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.view startMotionEffectWith:25];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
