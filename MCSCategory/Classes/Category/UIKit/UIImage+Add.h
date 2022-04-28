@@ -101,5 +101,5 @@
  @param color 把图片渲染成哪种颜色
  @return 渲染后的图片
  */
-- (UIImage *)renderImageWithColor:(UIColor *)color;
+//- (UIImage *)renderImageWithColor:(UIColor *)color;
 @end

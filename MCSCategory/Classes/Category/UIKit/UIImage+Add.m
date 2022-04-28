@@ -10,8 +10,6 @@
 #import <Accelerate/Accelerate.h>
 #import <ImageIO/ImageIO.h>
 
-#define YY_SWAP(_a_, _b_)  do { __typeof__(_a_) _tmp_ = (_a_); (_a_) = (_b_); (_b_) = _tmp_; } while (0)
-
 #define MAXIMAGEMB 5   //图片压缩限制到多少M
 
 @implementation UIImage (Add)
@@ -235,6 +233,7 @@
     return newImage;
 }
 
+/*
 - (UIImage *)imageByBlurRadius:(CGFloat)blurRadius
                      tintColor:(UIColor *)tintColor
                       tintMode:(CGBlendMode)tintBlendMode
@@ -393,7 +392,7 @@
 static void _yy_cleanupBuffer(void *userData, void *buf_data) {
     free(buf_data);
 }
-
+*/
 // Helper function to add tint and mask.
 - (UIImage *)_yy_mergeImageRef:(CGImageRef)effectCGImage
                      tintColor:(UIColor *)tintColor
