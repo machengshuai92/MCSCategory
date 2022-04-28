@@ -9,7 +9,8 @@
 #import "UIImage+Add.h"
 #import <Accelerate/Accelerate.h>
 #import <ImageIO/ImageIO.h>
-#import "YYKitMacro.h"
+
+#define YY_SWAP(_a_, _b_)  do { __typeof__(_a_) _tmp_ = (_a_); (_a_) = (_b_); (_b_) = _tmp_; } while (0)
 
 #define MAXIMAGEMB 5   //图片压缩限制到多少M
 
