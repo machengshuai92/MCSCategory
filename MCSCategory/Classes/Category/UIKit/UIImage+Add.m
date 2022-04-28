@@ -9,7 +9,6 @@
 #import "UIImage+Add.h"
 #import <Accelerate/Accelerate.h>
 #import <ImageIO/ImageIO.h>
-#import "YYKitMacro.h"
 #define MAXIMAGEMB 5   //图片压缩限制到多少M
 
 @implementation UIImage (Add)
@@ -71,6 +70,7 @@
 
 
 - (NSData *)compressOriginalImage:(UIImage *)image toMaxDataSizeKBytes:(CGFloat)size{
+    
     NSData * data = UIImageJPEGRepresentation(image, 1.0);
     CGFloat dataKBytes = data.length/1000.0;
     CGFloat maxQuality = 0.9f;
@@ -88,6 +88,42 @@
     return data;
 }
 
+- (UIImage *)compressImageQuality:(UIImage *)image toByte:(NSInteger)maxLength {
+    CGFloat compression = 1;
+    NSData *data = UIImageJPEGRepresentation(image, compression);
+    if (data.length < maxLength) return image;
+    CGFloat max = 1;
+    CGFloat min = 0;
+    for (int i = 0; i < 6; ++i) {
+        compression = (max + min) / 2;
+        data = UIImageJPEGRepresentation(image, compression);
+        if (data.length < maxLength * 0.9) {
+            min = compression;
+        } else if (data.length > maxLength) {
+            max = compression;
+        } else {
+            break;
+        }
+    }
+    UIImage *resultImage = [UIImage imageWithData:data];
+    return resultImage;
+
+}
+
+- (void)calulateImageFileSize:(UIImage *)image {
+    NSData *data = UIImagePNGRepresentation(image);
+    if (!data) {
+        data = UIImageJPEGRepresentation(image, 1.0);//需要改成0.5才接近原图片大小，原因请看下文
+    }
+    double dataLength = [data length] * 1.0;
+    NSArray *typeArray = @[@"bytes",@"KB",@"MB",@"GB",@"TB",@"PB", @"EB",@"ZB",@"YB"];
+    NSInteger index = 0;
+    while (dataLength > 1024) {
+        dataLength /= 1024.0;
+        index ++;
+    }
+    NSLog(@"image = %.3f %@",dataLength,typeArray[index]);
+}
 
 /// 修正图片转向
 -(UIImage *)fixWithOrientation:(UIImageOrientation)orientation{
@@ -202,15 +238,15 @@
                     saturation:(CGFloat)saturation
                      maskImage:(UIImage *)maskImage {
     if (self.size.width < 1 || self.size.height < 1) {
-//        DLog(@"UIImage+YYAdd error: invalid size: (%.2f x %.2f). Both dimensions must be >= 1: %@", self.size.width, self.size.height, self);
+        NSLog(@"UIImage+YYAdd error: invalid size: (%.2f x %.2f). Both dimensions must be >= 1: %@", self.size.width, self.size.height, self);
         return nil;
     }
     if (!self.CGImage) {
-//        DLog(@"UIImage+YYAdd error: inputImage must be backed by a CGImage: %@", self);
+        NSLog(@"UIImage+YYAdd error: inputImage must be backed by a CGImage: %@", self);
         return nil;
     }
     if (maskImage && !maskImage.CGImage) {
-//        DLog(@"UIImage+YYAdd error: effectMaskImage must be backed by a CGImage: %@", maskImage);
+        NSLog(@"UIImage+YYAdd error: effectMaskImage must be backed by a CGImage: %@", maskImage);
         return nil;
     }
     
@@ -246,12 +282,12 @@
         vImage_Error err;
         err = vImageBuffer_InitWithCGImage(&effect, &format, NULL, imageRef, kvImagePrintDiagnosticsToConsole);
         if (err != kvImageNoError) {
-//            DLog(@"UIImage+YYAdd error: vImageBuffer_InitWithCGImage returned error code %zi for inputImage: %@", err, self);
+            NSLog(@"UIImage+YYAdd error: vImageBuffer_InitWithCGImage returned error code %zi for inputImage: %@", err, self);
             return nil;
         }
         err = vImageBuffer_Init(&scratch, effect.height, effect.width, format.bitsPerPixel, kvImageNoFlags);
         if (err != kvImageNoError) {
-//            DLog(@"UIImage+YYAdd error: vImageBuffer_Init returned error code %zi for inputImage: %@", err, self);
+            NSLog(@"UIImage+YYAdd error: vImageBuffer_Init returned error code %zi for inputImage: %@", err, self);
             return nil;
         }
     } else {

@@ -38,6 +38,12 @@
  */
 - (NSData *)compressOriginalImage:(UIImage *)image toMaxDataSizeKBytes:(CGFloat)size;
 
+- (UIImage *)compressImageQuality:(UIImage *)image toByte:(NSInteger)maxLength;
+
+/**
+ * 计算图片大小
+ */
+- (void)calulateImageFileSize:(UIImage *)image;
 
 -(UIImage *)fixWithOrientation:(UIImageOrientation)orientation;//修正图片转向
 
