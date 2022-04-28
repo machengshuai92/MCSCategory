@@ -9,6 +9,8 @@
 #import "UIImage+Add.h"
 #import <Accelerate/Accelerate.h>
 #import <ImageIO/ImageIO.h>
+#import "YYKitMacro.h"
+
 #define MAXIMAGEMB 5   //图片压缩限制到多少M
 
 @implementation UIImage (Add)
