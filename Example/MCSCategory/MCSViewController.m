@@ -22,7 +22,7 @@
     
     [self.view startMotionEffectWith:25];
     
-    NSLog(@"%ld",[NSString getCurrentTimeBelongTo]);
+    NSLog(@"%@",[NSString getWeekDayFordate:nil]);
     
 	// Do any additional setup after loading the view, typically from a nib.
 }

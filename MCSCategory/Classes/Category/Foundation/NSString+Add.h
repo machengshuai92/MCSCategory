@@ -173,5 +173,9 @@ typedef enum : NSUInteger {
 /// 获取当前时间所属时间段
 + (CurrentTimeBelongTo)getCurrentTimeBelongTo;
 
+/// 获取某一天是周几
+/// @param date 日期 传nil默认当天
++ (NSString *_Nonnull)getWeekDayFordate:(NSDate *_Nullable)date;
+
 @end
 

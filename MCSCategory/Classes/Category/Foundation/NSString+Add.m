@@ -479,6 +479,15 @@
     return CurrentTimeBelongToUnknow;
 }
 
++ (NSString *)getWeekDayFordate:(NSDate *)date{
+    //获取星期几
+    NSDateComponents *componets = [[NSCalendar autoupdatingCurrentCalendar] components:NSCalendarUnitWeekday fromDate:date ? date : [NSDate date]];
+    NSInteger weekday = [componets weekday];//1代表星期日，2代表星期一，后面依次
+    NSArray *weekArray = @[@"星期日",@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六"];
+    NSString *weekStr = weekArray[weekday-1];
+    return weekStr;
+}
+
 @end
 
 
