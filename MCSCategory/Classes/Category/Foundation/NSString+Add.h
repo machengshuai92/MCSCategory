@@ -2,7 +2,24 @@
 //  Copyright © 2019年 DJ. All rights reserved.
 //
 
-
+typedef enum : NSUInteger {
+    ///早上 05:00-08:59
+    CurrentTimeBelongToMorning      = 0,
+    ///上午 09:00-11:59
+    CurrentTimeBelongToForenoon     = 1,
+    ///中午 12:00-13:59
+    CurrentTimeBelongToNoon         = 2,
+    ///下午 14:00-17:59
+    CurrentTimeBelongToAfternoon    = 3,
+    ///傍晚 18:00-18:59
+    CurrentTimeBelongToEvening      = 4,
+    ///晚上 19:00-23:59
+    CurrentTimeBelongToNight        = 5,
+    ///凌晨 00:00-04:59
+    CurrentTimeBelongToBeforedawn   = 6,
+    ///未知
+    CurrentTimeBelongToUnknow       = 7
+} CurrentTimeBelongTo;
 
 @interface NSString (Add)
 
@@ -143,15 +160,18 @@
 + (NSString *)getCurrentTimeWithFormat:(NSString *)format;
 
 /** 获取时间戳(毫秒为单位)*/
-+(NSString *)getNowTimeTimestamp3;
++(NSString *_Nonnull)getNowTimeTimestamp3;
 
 /** 获取总周数*/
 + (NSInteger)getWeekNumYear:(NSInteger)year;
 
 /** 获取第几周*/
-+ (NSString *)getWeekNumInYear;
++ (NSString *_Nonnull)getWeekNumInYear;
 
-- (NSString *)removeKongGe;
+- (NSString *_Nonnull)removeKongGe;
+
+/// 获取当前时间所属时间段
++ (CurrentTimeBelongTo)getCurrentTimeBelongTo;
 
 @end
 

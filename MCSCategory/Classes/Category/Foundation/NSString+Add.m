@@ -421,6 +421,64 @@
     return [NSString stringWithFormat:@"%@",string];
 }
 
+/*
+ typedef enum : NSUInteger {
+     ///早上 05:00-08:59
+     CurrentTimeBelongToMorning      = 0,
+     ///上午 09:00-11:59
+     CurrentTimeBelongToForenoon     = 1,
+     ///中午 12:00-13:59
+     CurrentTimeBelongToNoon         = 2,
+     ///下午 14:00-17:59
+     CurrentTimeBelongToAfternoon    = 3,
+     ///傍晚 18:00-18:59
+     CurrentTimeBelongToEvening      = 4,
+     ///晚上 19:00-23:59
+     CurrentTimeBelongToNight        = 5,
+     ///凌晨 00:00-04:59
+     CurrentTimeBelongToBeforedawn   = 6,
+     ///未知
+     CurrentTimeBelongToUnknow       = 7
+ } CurrentTimeBelongTo;
+ */
++ (CurrentTimeBelongTo)getCurrentTimeBelongTo{
+    NSLog(@"当前整数时间 %@",[NSString getCurrentTimeWithFormat:@"HH"]);
+    
+    int currentTime = [[NSString getCurrentTimeWithFormat:@"HH"] intValue];
+    
+    if (currentTime >= 5 && currentTime < 9) {
+        
+        return CurrentTimeBelongToMorning;
+        
+    }else if (currentTime >= 9 && currentTime < 12) {
+        
+        return CurrentTimeBelongToForenoon;
+        
+    }else if (currentTime >= 12 && currentTime < 14) {
+        
+        return CurrentTimeBelongToNoon;
+        
+    }else if (currentTime >= 14 && currentTime < 18) {
+        
+        return CurrentTimeBelongToAfternoon;
+        
+    }else if (currentTime >= 18 && currentTime < 19) {
+        
+        return CurrentTimeBelongToEvening;
+        
+    }else if (currentTime >= 19 && currentTime < 24) {
+        
+        return CurrentTimeBelongToNight;
+        
+    }else if (currentTime >= 0 && currentTime < 5) {
+        
+        return CurrentTimeBelongToBeforedawn;
+        
+    }
+    
+    return CurrentTimeBelongToUnknow;
+}
+
 @end
 
 

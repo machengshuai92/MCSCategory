@@ -22,6 +22,8 @@
     
     [self.view startMotionEffectWith:25];
     
+    NSLog(@"%ld",[NSString getCurrentTimeBelongTo]);
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

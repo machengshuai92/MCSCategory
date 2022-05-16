@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MCSCategory'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = '自己常用的一些Category'
 
 # This description is used to generate tags and improve search results.
