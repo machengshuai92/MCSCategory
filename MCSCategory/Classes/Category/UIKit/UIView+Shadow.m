@@ -6,11 +6,11 @@
 //  Copyright © 2018年 UU. All rights reserved.
 //
 
-#import "UIView+shadow.h"
+#import "UIView+Shadow.h"
 #import <objc/runtime.h>
 
 static NSString *OPENSHADOW = @"OPENSHADOW";
-@implementation UIView (shadow)
+@implementation UIView (Shadow)
 
 - (void)setOpenShadow:(BOOL)openShadow
 {
@@ -73,14 +73,14 @@ static NSString *OPENSHADOW = @"OPENSHADOW";
 //    [view.superview.layer insertSublayer:shadowLayer below:view.layer];
 }
 
-
-//view加普通路经阴影
-- (void)addShadow:(UIView *)view Color:(UIColor *)color
-{
+- (void)addShadowByBezierPathToView:(UIView *)view withShdowColor:(UIColor *)color withOffset:(CGSize)offSet withOpacity:(float)opacity withRadius:(float)radius{
+    
+    [view layoutIfNeeded];
+    
     view.layer.shadowColor = color.CGColor;//shadowColor阴影颜色
-    view.layer.shadowOffset = CGSizeMake(0, 0);//shadowOffset阴影偏移，默认(0, -3),这个跟shadowRadius配合使用
-    view.layer.shadowOpacity = 0.3;//0.8;//阴影透明度，默认0
-    view.layer.shadowRadius = 2;//8;//阴影半径，默认3
+    view.layer.shadowOffset = offSet;//shadowOffset阴影偏移，默认(0, -3),这个跟shadowRadius配合使用
+    view.layer.shadowOpacity = opacity;//0.8;//阴影透明度，默认0
+    view.layer.shadowRadius = radius;//8;//阴影半径，默认3
     
     //路径阴影
     UIBezierPath *path = [UIBezierPath bezierPath];
@@ -105,8 +105,6 @@ static NSString *OPENSHADOW = @"OPENSHADOW";
     //设置阴影路径
     view.layer.shadowPath = path.CGPath;
 }
-
-
 
 - (void)setShadowWithShadowOffset:(CGSize )offSet shadowColor:(UIColor *)shadowColor shadowRadius:(CGFloat)shadowRadius shadowOpacity:(CGFloat)shadowOpacity cornerRadius:(CGFloat)cornerRadius{
     self.layer.shadowRadius = shadowRadius;

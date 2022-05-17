@@ -25,6 +25,7 @@
 #import "UIButton+Badge.h"
 #import "UILabel+CustomizedEdgeInsets.h"
 #import "UIView+MotionEffect.h"
-
+#import "UIView+Shake.h"
+#import "UIView+Shadow.h"
 
 

@@ -32,14 +32,14 @@
 		2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
 		373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		39C92CE6E2C424F8EB5C97A663383986 /* UIView+shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E118E1A92997FBC4814A6DF2F6428D6 /* UIView+shadow.m */; };
+		39C92CE6E2C424F8EB5C97A663383986 /* UIView+Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E118E1A92997FBC4814A6DF2F6428D6 /* UIView+Shadow.m */; };
 		3C4695226998BE724327C427C79091F7 /* UIDevice+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1F6278E3CC3C425DAF77D6A63AEBDD /* UIDevice+YYAdd.m */; };
 		3D1028512D0F7CE8196F2959C88A503F /* Pods-MCSCategory_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB0E5B6F573DEEC7CF9893B7BDB59DF /* Pods-MCSCategory_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4559DADF649062B42FD957A580C9480D /* NSBundle+Language.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4878421B4D24F58C37A89BA16E6248 /* NSBundle+Language.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45C9A0857C1ADEC992DAB203645B07C5 /* UIButton+TagString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B57055B00D8E6E33952BCA4889F349C /* UIButton+TagString.m */; };
 		462906767CA33B6163B18D49AEB81D8E /* NSDictionary+Add.h in Headers */ = {isa = PBXBuildFile; fileRef = 8209A7B52ABF4FB8E64E8BDB7DA794A6 /* NSDictionary+Add.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4797BFF0ADFE86FA225D435E0323D3AB /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB61DF346EF1EC951AF76D1F8AFE025 /* NSObject+Property.m */; };
-		47ED04D91FB3DA6EFD7B34DE67C116FA /* UIView+shadow.h in Headers */ = {isa = PBXBuildFile; fileRef = 97E010D0F1C6EC0F7CFD07B0A9A3CB1F /* UIView+shadow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47ED04D91FB3DA6EFD7B34DE67C116FA /* UIView+Shadow.h in Headers */ = {isa = PBXBuildFile; fileRef = 97E010D0F1C6EC0F7CFD07B0A9A3CB1F /* UIView+Shadow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AFB2AF95C2B62DE7FDE7A10E1B55B26 /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9148A88B5BAE7AD4B82ABEDA69E14C /* NSBundle+Language.m */; };
 		4C9364D5727B57BA39F19AB38E55EE5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		4D79DA90313549228612CC48AC0AAB80 /* UIKitCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = C09DA048AB6B64112A8612E69CF8F42D /* UIKitCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -184,7 +184,7 @@
 		4847C42A2E2AF9E103C58D96E61A4013 /* UIDevice+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDevice+YYAdd.h"; sourceTree = "<group>"; };
 		48D3B01DB72DF2A4CE009E3CA300C2CF /* UIActionSheet+YDBlocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+YDBlocks.m"; sourceTree = "<group>"; };
 		49463938FBB564A72ADC9863A4F63F99 /* UIImage+Synthetic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Synthetic.m"; sourceTree = "<group>"; };
-		4C0EDE2CE6A3C2B9F11A8131FD591E5D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		4C0EDE2CE6A3C2B9F11A8131FD591E5D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		4F5B80070F942F710091448101442A45 /* Pods-MCSCategory_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MCSCategory_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4FDDA093B4EDDBAC29E7F3FE86511791 /* UIButton+XYButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+XYButton.h"; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 		5B57055B00D8E6E33952BCA4889F349C /* UIButton+TagString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TagString.m"; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA0D2D8185E15D6F2842E1B1935020D /* BlockImagePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BlockImagePicker.m; sourceTree = "<group>"; };
-		5D1E22130B4FE1D000DCD3B3961507D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5D1E22130B4FE1D000DCD3B3961507D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5E6800A181CEEAA43FD1B536F53D57C6 /* UIButton+TagString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+TagString.h"; sourceTree = "<group>"; };
 		5EC681D3C5CA3B0B65DB9FB8AADB32E6 /* UIApplication+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIApplication+YYAdd.h"; sourceTree = "<group>"; };
 		5F797DB9B44BF22C57C36C973A440AF3 /* UIImage+Add.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Add.h"; sourceTree = "<group>"; };
@@ -206,7 +206,7 @@
 		7B957B3C521CA93C7F9E7BBF893974B0 /* UIView+MotionEffect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+MotionEffect.m"; sourceTree = "<group>"; };
 		7BAA8836993802BADBDFF404E3FBB114 /* Pods-MCSCategory_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MCSCategory_Example.modulemap"; sourceTree = "<group>"; };
 		7D88593C1A0DF296258B433926C11B2B /* Pods-MCSCategory_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MCSCategory_Example-Info.plist"; sourceTree = "<group>"; };
-		7E118E1A92997FBC4814A6DF2F6428D6 /* UIView+shadow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+shadow.m"; sourceTree = "<group>"; };
+		7E118E1A92997FBC4814A6DF2F6428D6 /* UIView+Shadow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shadow.m"; sourceTree = "<group>"; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		8209A7B52ABF4FB8E64E8BDB7DA794A6 /* NSDictionary+Add.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Add.h"; sourceTree = "<group>"; };
 		865ABB2ABD8A6FD9072F56666D023465 /* Pods-MCSCategory_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MCSCategory_Tests.modulemap"; sourceTree = "<group>"; };
@@ -218,10 +218,10 @@
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		975DABA02BD114E9F5DA9C356DDCFF8F /* UITextView+ZWLimitCounter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextView+ZWLimitCounter.h"; sourceTree = "<group>"; };
-		97E010D0F1C6EC0F7CFD07B0A9A3CB1F /* UIView+shadow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+shadow.h"; sourceTree = "<group>"; };
+		97E010D0F1C6EC0F7CFD07B0A9A3CB1F /* UIView+Shadow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Shadow.h"; sourceTree = "<group>"; };
 		982107B80339EF117217BD9CFED437BB /* UIUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UIUtil.h; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E494B078765BD746D4D683D5D24F0CD /* UILabel+CustomizedEdgeInsets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CustomizedEdgeInsets.m"; sourceTree = "<group>"; };
 		A0E50D9000257111C9823491D3DD2D12 /* UIUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIUtil.m; sourceTree = "<group>"; };
 		A1080F7A0C08CC3385EB43148F7A78BE /* MCSCategory-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MCSCategory-umbrella.h"; sourceTree = "<group>"; };
@@ -271,7 +271,7 @@
 		ED2FE9029143CDEAFFB5A338FBD0C77E /* UITextView+ZWPlaceHolder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ZWPlaceHolder.m"; sourceTree = "<group>"; };
 		EDB61DF346EF1EC951AF76D1F8AFE025 /* NSObject+Property.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 		F33E6EF64BF7B6098079371AE3CA519C /* UIGestureRecognizer+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+BlocksKit.m"; sourceTree = "<group>"; };
-		F8B95F0C2AE414A418D743BC35683027 /* MCSCategory.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MCSCategory.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F8B95F0C2AE414A418D743BC35683027 /* MCSCategory.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MCSCategory.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FB26301AAD69BBC5F6CCE7D07B1C14B9 /* UIGestureRecognizer+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+YYAdd.m"; sourceTree = "<group>"; };
 		FE5CFD499DE05901BCADF83B632577D6 /* Pods-MCSCategory_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MCSCategory_Example-dummy.m"; sourceTree = "<group>"; };
 		FE89F4C4C081EF0AB874F25A03664A7F /* Pods-MCSCategory_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MCSCategory_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -435,7 +435,6 @@
 				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
 				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -554,6 +553,7 @@
 				0C20E498C28469A8B94338E6D13CB66A /* UIImage+Add.m */,
 				3CBBBD3E187FAC1292F48CED9CFB1A99 /* UIImage+Synthetic.h */,
 				49463938FBB564A72ADC9863A4F63F99 /* UIImage+Synthetic.m */,
+				FCDAF30A49757F8B9F02FAF1D38EA870 /* UIKit+Block */,
 				C09DA048AB6B64112A8612E69CF8F42D /* UIKitCategory.h */,
 				CFBFCF8E58A6186133ED90606DA2BB38 /* UILabel+CustomizedEdgeInsets.h */,
 				9E494B078765BD746D4D683D5D24F0CD /* UILabel+CustomizedEdgeInsets.m */,
@@ -571,8 +571,8 @@
 				A0E50D9000257111C9823491D3DD2D12 /* UIUtil.m */,
 				EBC183CDEE233B1BB469A33B342025EF /* UIView+MotionEffect.h */,
 				7B957B3C521CA93C7F9E7BBF893974B0 /* UIView+MotionEffect.m */,
-				97E010D0F1C6EC0F7CFD07B0A9A3CB1F /* UIView+shadow.h */,
-				7E118E1A92997FBC4814A6DF2F6428D6 /* UIView+shadow.m */,
+				97E010D0F1C6EC0F7CFD07B0A9A3CB1F /* UIView+Shadow.h */,
+				7E118E1A92997FBC4814A6DF2F6428D6 /* UIView+Shadow.m */,
 				B50184989124FE39AA1D95A635672E62 /* UIView+Shake.h */,
 				659E9D47C4436C12309B28970E26CE36 /* UIView+Shake.m */,
 				00FCE0ADA465E0097D6F3606BB31D230 /* UIView+YYAdd.h */,
@@ -582,7 +582,6 @@
 				1038586DCF348BDDF7EE963EB9DEBDED /* YDBlockImagePicker.h */,
 				1C7E76436A0DF41DA95EE860F7F84B66 /* YDBlockImagePicker.m */,
 				AA320F52DA22FBD7B8724185742E92FA /* YYKitMacro.h */,
-				FCDAF30A49757F8B9F02FAF1D38EA870 /* UIKit+Block */,
 			);
 			name = UIKit;
 			path = MCSCategory/Classes/Category/UIKit;
@@ -609,7 +608,6 @@
 				E6955BD5002D00E45B1B9569EEADDC5B /* UIGestureRecognizer+BlocksKit.h */,
 				F33E6EF64BF7B6098079371AE3CA519C /* UIGestureRecognizer+BlocksKit.m */,
 			);
-			name = "UIKit+Block";
 			path = "UIKit+Block";
 			sourceTree = "<group>";
 		};
@@ -656,7 +654,7 @@
 				5A5D7892D845AC578947E5D614D48193 /* UITextView+ZWPlaceHolder.h in Headers */,
 				DB169C3AD2C0F523D53C3AE2DBD973F1 /* UIUtil.h in Headers */,
 				8DB8EC07B177DBA76B6258BB036BC768 /* UIView+MotionEffect.h in Headers */,
-				47ED04D91FB3DA6EFD7B34DE67C116FA /* UIView+shadow.h in Headers */,
+				47ED04D91FB3DA6EFD7B34DE67C116FA /* UIView+Shadow.h in Headers */,
 				127D4B545413D277EE7BAC7953EDC31B /* UIView+Shake.h in Headers */,
 				56CE1D32CA4AE21FDF0F6C0AF9ADDB78 /* UIView+YYAdd.h in Headers */,
 				0F4B4BA151D8F64F1D08DB0D41B682AF /* UIViewController+AlertViewAndActionSheet.h in Headers */,
@@ -880,7 +878,7 @@
 				709A79DBCBA01EE26A6BCFF35E87CD41 /* UITextView+ZWPlaceHolder.m in Sources */,
 				81FAE5AEBA5A036525398BA3765AC5FB /* UIUtil.m in Sources */,
 				782F73D3E11BFEEDA07652DE37FBC5B2 /* UIView+MotionEffect.m in Sources */,
-				39C92CE6E2C424F8EB5C97A663383986 /* UIView+shadow.m in Sources */,
+				39C92CE6E2C424F8EB5C97A663383986 /* UIView+Shadow.m in Sources */,
 				0D2E91782B4DE6552970D69AD2434778 /* UIView+Shake.m in Sources */,
 				5D39F7578F3DAA3C4C679AAA182FA6D5 /* UIView+YYAdd.m in Sources */,
 				72488AB7452292A126D0B3F1B0E0B13C /* UIViewController+AlertViewAndActionSheet.m in Sources */,
@@ -1277,8 +1275,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

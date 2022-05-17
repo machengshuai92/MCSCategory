@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (shadow)
+@interface UIView (Shadow)
 @property (nonatomic,assign) BOOL openShadow;
 
 + (void)addShadowToView:(UIView *)view
@@ -19,7 +19,17 @@
                   Color:(UIColor *)color;
 
 
-- (void)addShadow:(UIView *)view Color:(UIColor *)color;
+/// 通过贝塞尔曲线的方法加载背景圆角
+/// @param view 需要加圆角的视图
+/// @param color 阴影颜色
+/// @param offSet 阴影偏移 (0,-3)
+/// @param opacity 阴影透明度
+/// @param radius 阴影半径
+- (void)addShadowByBezierPathToView:(UIView *)view
+                     withShdowColor:(UIColor *)color
+                         withOffset:(CGSize)offSet
+                        withOpacity:(float)opacity
+                         withRadius:(float)radius;
 
 
 /*
