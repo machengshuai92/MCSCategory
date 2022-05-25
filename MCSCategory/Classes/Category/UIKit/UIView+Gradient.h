@@ -25,7 +25,8 @@ typedef NS_ENUM(NSInteger, GradientPosition){
 /// 设置渐变色
 /// @param colors 颜色数组 (__bridge id)UIColor.redColor.CGColor
 /// @param position 渐变方向
-- (void)addGradientColors:(NSArray *)colors andGradientPosition:(GradientPosition)position;
+/// @param index 插入位置
+- (void)addGradientColors:(NSArray *)colors andGradientPosition:(GradientPosition)position insertAtIndex:(unsigned)index;
 
 @end
 

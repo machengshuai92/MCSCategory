@@ -9,7 +9,7 @@
 
 @implementation UIView (Gradient)
 
-- (void)addGradientColors:(NSArray *)colors andGradientPosition:(GradientPosition)position{
+- (void)addGradientColors:(NSArray *)colors andGradientPosition:(GradientPosition)position insertAtIndex:(unsigned int)index{
     
     [self layoutIfNeeded];
     
@@ -37,7 +37,7 @@
     }
     
     gradientLayer.frame = self.bounds;
-    [self.layer addSublayer:gradientLayer];
+    [self.layer insertSublayer:gradientLayer atIndex:index];
     
 }
 
