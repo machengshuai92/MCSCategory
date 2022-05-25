@@ -43,6 +43,8 @@
 		4AFB2AF95C2B62DE7FDE7A10E1B55B26 /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9148A88B5BAE7AD4B82ABEDA69E14C /* NSBundle+Language.m */; };
 		4C9364D5727B57BA39F19AB38E55EE5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		4D79DA90313549228612CC48AC0AAB80 /* UIKitCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = C09DA048AB6B64112A8612E69CF8F42D /* UIKitCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52A9DC37283E040C0082E5BD /* UIView+Gradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 52A9DC35283E040C0082E5BD /* UIView+Gradient.h */; };
+		52A9DC38283E040C0082E5BD /* UIView+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A9DC36283E040C0082E5BD /* UIView+Gradient.m */; };
 		5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		56393078E0E3931B9CDBDE49D3381587 /* UITextField+ResignTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D7E35B6EE4813E39FE2BC942EB5AB5 /* UITextField+ResignTool.m */; };
 		56CE1D32CA4AE21FDF0F6C0AF9ADDB78 /* UIView+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 00FCE0ADA465E0097D6F3606BB31D230 /* UIView+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -188,6 +190,8 @@
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		4F5B80070F942F710091448101442A45 /* Pods-MCSCategory_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MCSCategory_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4FDDA093B4EDDBAC29E7F3FE86511791 /* UIButton+XYButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+XYButton.h"; sourceTree = "<group>"; };
+		52A9DC35283E040C0082E5BD /* UIView+Gradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Gradient.h"; sourceTree = "<group>"; };
+		52A9DC36283E040C0082E5BD /* UIView+Gradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gradient.m"; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5B57055B00D8E6E33952BCA4889F349C /* UIButton+TagString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TagString.m"; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -577,6 +581,8 @@
 				659E9D47C4436C12309B28970E26CE36 /* UIView+Shake.m */,
 				00FCE0ADA465E0097D6F3606BB31D230 /* UIView+YYAdd.h */,
 				1B824AB2B033635A0916BAAC82176895 /* UIView+YYAdd.m */,
+				52A9DC35283E040C0082E5BD /* UIView+Gradient.h */,
+				52A9DC36283E040C0082E5BD /* UIView+Gradient.m */,
 				FF7B83EA2CCBC95B2F0E865DA0251CA6 /* UIViewController+AlertViewAndActionSheet.h */,
 				BE539E298082504D5D435C88E55702ED /* UIViewController+AlertViewAndActionSheet.m */,
 				1038586DCF348BDDF7EE963EB9DEBDED /* YDBlockImagePicker.h */,
@@ -635,6 +641,7 @@
 				FB29C4E4B33A1D5DAA76493EDE110E12 /* UIActionSheet+YDBlocks.h in Headers */,
 				9221A200662DB924404DBEBBC88D64C0 /* UIApplication+YYAdd.h in Headers */,
 				12DD17D429DE69049311623C0BDDC3CE /* UIButton+Badge.h in Headers */,
+				52A9DC37283E040C0082E5BD /* UIView+Gradient.h in Headers */,
 				1218AAE5140067D5AF60A144DCB4F69A /* UIButton+TagString.h in Headers */,
 				BB78307328889B9C138F80768020BF1E /* UIButton+XYButton.h in Headers */,
 				A523A50734774C3624AC5AEBA15334A8 /* UICollectionView+IndexPath.h in Headers */,
@@ -882,6 +889,7 @@
 				0D2E91782B4DE6552970D69AD2434778 /* UIView+Shake.m in Sources */,
 				5D39F7578F3DAA3C4C679AAA182FA6D5 /* UIView+YYAdd.m in Sources */,
 				72488AB7452292A126D0B3F1B0E0B13C /* UIViewController+AlertViewAndActionSheet.m in Sources */,
+				52A9DC38283E040C0082E5BD /* UIView+Gradient.m in Sources */,
 				0553AD05BA7D4729C8D81DC73B12566F /* YDBlockImagePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

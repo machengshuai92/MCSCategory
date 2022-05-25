@@ -27,5 +27,5 @@
 #import "UIView+MotionEffect.h"
 #import "UIView+Shake.h"
 #import "UIView+Shadow.h"
-
+#import "UIView+Gradient.h"
 
