@@ -28,6 +28,13 @@ typedef NS_ENUM(NSInteger, GradientPosition){
 /// @param index 插入位置
 - (void)addGradientColors:(NSArray *)colors andGradientPosition:(GradientPosition)position insertAtIndex:(unsigned)index;
 
+/// 设置渐变色并且切圆角
+/// @param colors 颜色数组 (__bridge id)UIColor.redColor.CGColor
+/// @param position 渐变方向
+/// @param index 插入位置
+/// @param radius 圆角
+- (void)addGradientColors:(NSArray *)colors andGradientPosition:(GradientPosition)position insertAtIndex:(unsigned)index andRadius:(CGFloat)radius;
+
 @end
 
 NS_ASSUME_NONNULL_END
