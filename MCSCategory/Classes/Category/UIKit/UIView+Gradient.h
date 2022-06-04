@@ -11,9 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, GradientPosition){
     ///横向
-    PositonHorizontal,
+    PositionHorizontal,
     ///竖向
-    PositonVertical,
+    PositionVertical,
     ///左上->右下
     PositionUpLeft,
     ///右上->左下
