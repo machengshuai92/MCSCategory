@@ -48,11 +48,11 @@
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];
     gradientLayer.colors = colors;
     switch (position) {
-        case PositonHorizontal:
+        case PositionHorizontal:
             gradientLayer.startPoint = CGPointMake(0, 0);
             gradientLayer.endPoint = CGPointMake(1.0, 0);
             break;
-        case PositonVertical:
+        case PositionVertical:
             gradientLayer.startPoint = CGPointMake(0, 0);
             gradientLayer.endPoint = CGPointMake(0, 1.0);
             break;
