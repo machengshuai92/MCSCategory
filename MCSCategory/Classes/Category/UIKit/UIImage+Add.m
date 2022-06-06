@@ -9,6 +9,7 @@
 #import "UIImage+Add.h"
 #import <Accelerate/Accelerate.h>
 #import <ImageIO/ImageIO.h>
+#import <AVFoundation/AVFoundation.h>
 
 #define MAXIMAGEMB 5   //图片压缩限制到多少M
 
@@ -272,6 +273,29 @@
     UIImage *outputImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return outputImage;
+}
+
+- (UIImage *)getVideoPreviewImage:(NSString *)urlString{
+    if (!urlString) return nil;
+    
+    NSURL *url = [NSURL URLWithString:urlString];
+    AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:url options:nil];
+    AVAssetImageGenerator *assetGen = [[AVAssetImageGenerator alloc] initWithAsset:asset];
+    
+    assetGen.appliesPreferredTrackTransform = YES;
+    
+    CMTime time = CMTimeMakeWithSeconds(0.0, 600);
+    NSError *error = nil;
+    
+    CMTime actualTime;
+    
+    CGImageRef image = [assetGen copyCGImageAtTime:time actualTime:&actualTime error:&error];
+    
+    UIImage *videoImage = [[UIImage alloc] initWithCGImage:image];
+    CGImageRelease(image);
+    
+    return videoImage;
+    
 }
 
 @end

@@ -32,6 +32,7 @@
 #import "NSData+YYAdd.h"
 #import <CoreLocation/CoreLocation.h>
 #import <CommonCrypto/CommonDigest.h>
+#import <AVFoundation/AVFoundation.h>
 
 @implementation NSString (Add)
 
@@ -486,6 +487,15 @@
     NSArray *weekArray = @[@"星期日",@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六"];
     NSString *weekStr = weekArray[weekday-1];
     return weekStr;
+}
+
+- (NSTimeInterval)getVideoTime{
+    NSURL *url = [NSURL URLWithString:self];
+    NSDictionary *opts = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:NO] forKey:AVURLAssetPreferPreciseDurationAndTimingKey];
+    AVURLAsset *urlAsset = [AVURLAsset URLAssetWithURL:url options:opts];
+    int second = 0;
+    second = urlAsset.duration.value/(float)urlAsset.duration.timescale;
+    return second;
 }
 
 @end

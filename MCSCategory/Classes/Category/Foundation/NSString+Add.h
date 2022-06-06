@@ -177,5 +177,8 @@ typedef enum : NSUInteger {
 /// @param date 日期 传nil默认当天
 + (NSString *_Nonnull)getWeekDayFordate:(NSDate *_Nullable)date;
 
+/// 获取视频时长
+- (NSTimeInterval)getVideoTime;
+
 @end
 
