@@ -498,6 +498,17 @@
     return second;
 }
 
++ (BOOL)isEmpty:(id)text{
+    if ([text isEqual:[NSNull null]]) {
+        return YES;
+    }else if ([text isKindOfClass:[NSNull class]]) {
+        return YES;
+    }else if (text == nil) {
+        return YES;
+    }
+    return NO;
+}
+
 @end
 
 

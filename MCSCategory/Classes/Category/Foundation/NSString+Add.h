@@ -180,5 +180,9 @@ typedef enum : NSUInteger {
 /// 获取视频时长
 - (NSTimeInterval)getVideoTime;
 
+/// 判断是否为空
+/// @param text 需要判断的字符
++ (BOOL)isEmpty:(id)text;
+
 @end
 
