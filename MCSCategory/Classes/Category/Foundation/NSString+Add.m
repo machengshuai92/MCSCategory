@@ -505,6 +505,8 @@
         return YES;
     }else if (text == nil) {
         return YES;
+    }else if ([NSString stringWithFormat:@"%@",text].length <= 0) {
+        return YES;
     }
     return NO;
 }
